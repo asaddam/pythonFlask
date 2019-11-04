@@ -1,9 +1,9 @@
 from django.contrib.sites import requests
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
-API_URL = ''
+API_URL = 'http://127.0.0.1:8000/api/v1'
 
 @app.route('/')
 def index():
